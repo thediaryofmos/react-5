@@ -8,13 +8,13 @@ function App() {
   let [number, setNumber] = useState(50);
   let value = 81;
   return (
-    <ValueContext.Provider value = {value}>
+    <valueContext.Provider value = {value}>
     <div>
      Hello World
      <Parent num = {number}> </Parent>
      <button onClick = {() => {setNumber(++number)}}> Update Number</button>
     </div>
-    </ValueContext.Provider>
+    </valueContext.Provider>
   );
 }
 
