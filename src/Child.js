@@ -6,6 +6,9 @@ function Child(props) {
     return (
       <div className="App">
        Child Number: {value}
+       <br/>
+       <button onClick = {() => {value[1] (++value[0])}}>Update Child Number</button>
+       <br/>
        Number: {props.num}
       </div>
     );
